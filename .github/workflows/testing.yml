@@ -1,0 +1,11 @@
+name: Run tests
+on: [push]
+jobs:
+  test:
+    runs-on: ununtu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm Install
+      - name: Run the tests
+        run: npm test
