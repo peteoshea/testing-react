@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore cypress files that get generated when tests are run
+cypress/fixtures/*.json
+cypress/screenshots/All Specs/*.png
